@@ -1,0 +1,6 @@
+sqlalchemy
+pyodbc
+google-genai
+python-dotenv
+streamlit
+pandas
