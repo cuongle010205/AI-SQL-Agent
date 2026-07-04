@@ -73,29 +73,31 @@ An AI-powered SQL Agent that converts natural language questions into SQL querie
 ## 📂 Project Structure
 
 ```
-AI-SQL-Agent
+PROJECT AI AGENT DATABASE
 │
-├── app.py
-├── LLM.py
-├── fake_llm.py
-├── SQLexecutor.py
-├── schema.py
-├── planner.py
-├── validator.py
-├── explainer.py
-├── exporter.py
-├── visualizer.py
-├── logger.py
-├── cache.py
-├── memory.py
+├── app.py                 # Streamlit interface
+├── LLM.py                 # Gemini API
+├── fake_llm.py            # Generate SQL from natural language
+├── planner.py             # Determine if database access is required
+├── prompt.py              # Prompt templates
+├── memory.py              # Conversation history
+├── cache.py               # SQL cache & result cache
+├── validator.py           # Validate SQL
+├── SQLexecutor.py         # Execute SQL
+├── databaseconnect.py     # SQL Server connection
+├── schema.py              # Read database schema
+├── explainer.py           # Explain SQL results
+├── visualizer.py          # Draw charts
+├── exporter.py            # Export Excel
+├── logger.py              # Save query logs
+├── utils.py               # Helper functions
 │
 ├── database/
-│   └── Qlsv.sql
+│   └── Qlsv.sql           # Database script
 │
-├── .env.example
 ├── requirements.txt
-├── README.md
-└── screenshots/
+├── .env
+└── README.md
 ```
 
 ---
